@@ -1,0 +1,123 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+/* Container */
+div {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+/* Form row - label and input side by side */
+label {
+  display: inline-block;
+  width: 120px; /* fixed width for labels */
+  font-weight: bold;
+  color: #555;
+  vertical-align: middle;
+}
+
+/* Inputs and select aligned with labels */
+input[type="text"],
+input[type="number"],
+select {
+  display: inline-block;
+  width: calc(100% - 130px); /* full width minus label width + margin */
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+/* Adjust input with $ sign */
+#productPrice {
+  width: calc(100% - 150px);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* $ sign next to price input */
+#productPrice + text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -35px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.customer {
+ width: 100%;
+}
+/* Hover effect */
+button:hover {
+  background-color: #218838;
+}
+
+/* Remove button style */
+#removebtn {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
+
+#removebtn:hover {
+  background-color: #c82333;
+}
+
+/* Output section */
+.remover {
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+
+  /* Flexbox for horizontal layout */
+  display: flex;
+  justify-content: space-between; /* space evenly */
+  gap: 10px; /* optional spacing between items */
+  font-size: 14px;
+  color: #444;
+}
+
+.remover p {
+  flex: 1; /* all paragraphs take equal width */
+  margin: 0; /* remove default margin */
+  padding: 5px;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.remover p span {
+  font-weight: bold;
+  color: #000;
+  
+}
